@@ -256,6 +256,7 @@ button{
     height: 50px;
     transform: 0;
 }
+
 .logo {
     display: inline-block;
     width: 40%;
@@ -471,7 +472,7 @@ input {
     float:left;
     clear:left;
     padding: 15px;
-    font-family: Gill Sans;
+    font-family: Gill Sans, sans-serif;
     font-size: 50px;
     color: white;
     text-shadow: 1px 1px 4px #444;
