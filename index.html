@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Lusication</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/slide.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>    
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+    <script src="https://www.rdio.com/api/api.js?client_id=JJ1Hkd-HoYedMSwlpbYfpA"></script>
+</head>
+    
+<body>
+<!------------------------------------------------------------------------Header------------------------------------------------------------------------>
+    
+    <header>
+        <img id="logo" src="img/LOGO1_WHITE.png"/>
+        <h1>Lusication</h1>
+        
+<!------------------------------------------------------------------------Buttons----------------------------------------------------------------------->   
+        
+        <button id="showRight"><img id="arrow-button" src="img/arrow1.png" /></button>
+        <button id="login">
+            <p>Log In</p>
+        </button>
+        <button id="accomplishment-button">Accomplishment</button>
+        <button id="player-button">Player</button>
+        <button id="about-button">About</button>
+    </header>
+
+<!----------------------------------------------------------------------container----------------------------------------------------------------------->  
+
+    <div class="container">
+
+<!----------------------------------------------------------------------playlist------------------------------------------------------------------------>      
+        
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<div id="topside" class="containerdivNewLine">
+                <div id="playlist-title">
+                    Playlist
+                </div>
+                
+                <div class ="containerdivNewLine">
+                </div>
+                
+                <div id="search-box-container" class="inside-container">
+                    <input type="search" id="search-title" placeholder="Enter track title, artist, or album name here.">
+                    <button id="search-submit">Search</button>
+                <div id="search-result-container"></div>
+                </div>
+            </div>
+					<ul>
+					
+					</ul>
+		</nav>
+
+<!-------------------------------------------------------------------------About Tab--------------------------------------------------------------------------->
+        
+        <div id="about">
+            <div id="bigtitle"><b>About</b></div>
+            
+            <div id="lusication">    
+                <div class="description">
+                <b>Lusication</b> is a location-based musing sharing/nextwork service.<br>
+                <b>Lusication</b> locates you, finds people near you, and connect you to them.<br>
+                <b>Lusication</b> provides you the songs your neighbors are listening to.
+                </div>
+            
+            <div class="logo">
+                <div id="lusication-logo" class="shadowed center"></div>
+            </div>
+                
+            </div>
+            <div id="rdio">
+                <div class="logo">
+                    <div id="rdio-logo" class="shadowed center">
+                    </div>
+                </div>
+                
+                <div class="description2"><b>Lusication</b> uses the rdio&trade; api to play the music.<br>
+                rdio&trade; login is necessary to fully utilize Lusication.<br>
+                Still, guest usage allows limited access to the features.</div>
+            </div>
+            <div id="firebase">
+                <div class="description3"><b>Lusication</b> uses the Firebase api to manage backend database.<br>  
+                </div>
+                
+                <div class="logo">
+                    <div id="fire-logo" class="shadowed center">
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+<!----------------------------------------------------------------------------Player Tab----------------------------------------------------------------------->
+        
+        <div id="player">
+			<div id="album-art-container" class="inside-container shadowed center"></div>
+            
+            <div class="inside-container containerdivNewLine player-height"></div>
+            
+            <div id="most-recently-played-container" class="inside-container">
+                Most Recently Played Music:
+            </div>
+            
+            <div id="number-played-container" class="inside-container">
+                Number of Music Played:
+            </div>
+            
+            <div id="liked-number-container" class="inside-container">
+                Number of Likes:
+            </div>
+			
+			<div id="bigtitle3" class="inside-container containerdivNewLine"><b>Favorite Accomplishments</b></div>           
+            <div class="divTable">
+				 <div class="divRow">
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+				</div>
+				<div class="divRow">
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+				</div>
+			</div>
+        </div>
+    
+<!-------------------------------------------------------------------------Accomplishment Tab------------------------------------------------------------------>        
+       
+        <div id="accomplishment">
+            <div id="bigtitle2" ><b>Accomplishment</b></div>
+            <div class="divTable">
+             <div class="divRow">
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+            </div>
+            <div class="divRow">
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+            </div>
+            <div class="divRow">
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+            </div>
+            <div class="divRow">
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+            </div>
+      </div>
+        </div>
+    </div>
+
+<!-------------------------------------------------------------------------------Footer------------------------------------------------------------------------>     
+    
+    <footer class="text-center">
+        <a href="https://www.facebook.com/pages/Lusication/519479314829438"><img class="sns-button" src="img/fb.png" /></a>
+		Copyright &copy; 2014 <a class="mail" href="mailto:swh0901@gmail.com">Seong Wook Ha</a>, <a class="mail" href="mailto:cdchoi3@illinois.edu"> Christopher Danhee Choi.</a> All Rights Reserved.
+        <br>We recommend using high resolution (1280*720 or higher).
+        
+    </footer>
+    
+<!-------------------------------------------------------------------------------Script------------------------------------------------------------------------> 
+    <script src="js/player.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+		<script>
+			var 
+				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+
+				showRight = document.getElementById( 'showRight' ),
+				body = document.body;
+
+			showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+			}
+		</script>
+</body>
+</html>

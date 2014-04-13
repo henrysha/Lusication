@@ -1,0 +1,535 @@
+.center{
+    display: block;
+    margin: auto;
+    float: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.description {
+    display: inline-block;
+    float: left;
+    font-size: 1.75em;
+    line-height: 1.75em;
+    width: 45%;
+    padding: 2% 0 0 5%;
+    height: 100%;
+    text-shadow: 1px 1px 4px #444;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.description2 {
+    display: inline-block;
+    float: left;
+    font-size: 1.75em;
+    line-height: 1.75em;
+    width: 36%;
+    padding: 2% 0 0 0;
+    height: 100%;
+    text-shadow: 1px 1px 4px #444;
+}
+
+#bigtitle{
+    display: block;
+    width: 100%;
+    padding-top: 4%;
+    min-height: 250px;
+    float: none;
+    font-size: 300px;
+    padding-left: 25px;
+    line-height: 150px;
+    text-shadow: 10px 10px 40px #444;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+#bigtitle2{
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    float: none;
+    font-size: 100px;
+    padding-left: 25px;
+    line-height: 150px;
+    text-shadow: 10px 10px 40px #444;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.containerdivNewLine { 
+    clear:both;
+    float: left; 
+    display: block; 
+    position: relative; 
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-image:url(../img/back2.png);
+    background-size:cover;
+    font-family: Gill Sans, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+header{
+    background-color: #393939;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: block;
+    top: 0;
+    font-family: Gill Sans, sans-serif;
+    color:white;
+    padding-bottom: 5px;
+    z-index: 10;
+}
+
+header h1 {
+    display: inline;
+}
+
+header #logo{
+    height: 50px;
+    margin-left: 5px;
+}
+
+header button {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    vertical-align: middle;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin-top: 2.5px;
+    padding: 0 20px 0 20px;
+}
+
+header button:hover{
+    cursor: pointer;
+}
+
+header button:focus{
+    background-color: #404040;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+button{
+    background-color:transparent;
+    border: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 55px;
+    margin-bottom: 1.5em;
+}
+
+#main {
+    display: block;
+}
+
+#accomplishment-button {
+    margin-right: 100px;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+#about {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#rdio-logo {
+    background-image: url(../img/rdio-logo.png);
+    display: block;
+    width:500px;
+    height: 192px;
+    background-size: 100%;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#rdio {
+    display: block;
+    width: 90%;
+    height: 193px;
+    float: none;
+    padding: 0;
+}
+
+#lusication {
+    display: block;
+    width: 100%;
+    min-height: 250px;
+    float: none;
+}
+
+#lusication-logo {
+    background-image: url(../img/LOGO1_WHITE.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 100px;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+#fire-logo {
+    background-image: url(../img/firebase_logo.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 100%;
+    width: 650px;
+    height: 130px;
+    margin-left: 0;
+}
+
+.description3 {
+    display: inline-block;
+    float: left;
+    font-size: 1.75em;
+    line-height: 1.75em;
+    width: 30%;
+    padding: 2% 0 0 0;
+    height: 100%;
+    text-shadow: 1px 1px 4px #444;
+    margin-left: 5%;
+}
+
+#firebase {
+    display: block;
+    width: 100%;
+    height: 193px;
+    float: none;
+    padding-top: 4%;
+    
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+#player {
+    display:none;
+    width:100%;
+    height: 100%;
+    padding-top: 2.5%
+}
+
+#accomplishment {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#arrow-button{
+    height: 50px;
+    transform: 0;
+}
+.logo {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+#album-art-container {
+    display: block;
+    position: relative;
+    padding: 20px;
+    margin: 0 1% 1% 4%;
+    border-style: double;
+    border-width: 15px;
+    border-color: white;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/musicnote.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#user-name-container {
+    margin-left: 5%;
+    width:50%;
+}
+
+.inside-container {
+    display: block;
+    float: left;
+    font-family: Gill Sans, sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 4px #444;
+}
+
+#number-played-container {
+    margin-left: 6%;
+    width: 100%;
+}
+
+#liked-number-container {
+    margin-left: 7%;
+    width: 100%;
+}
+
+#top-5-accomplishment-container {
+    width:100%;
+}
+
+#top-5-accomplishment-title-container {
+    width:100%;
+}
+
+#top-5-accomplishment-content-container {
+    width:100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.divTable{
+    display:table;         
+    width: 80%; 
+    height: 60%;
+    background-color:transparent;                  
+    border-spacing:5px;/*cellspacing:poor IE support for  this*/
+}
+
+.divRow{
+    display:table-row;
+    width:auto;
+    clear:both;
+}
+
+.divCell{
+    float:left;/*fix for  buggy browsers*/
+    display:table-column;         
+    width:185px;
+    height: 195px;
+    background-image: url(/img/em.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1); 
+    padding: 2%;
+    margin: 0 1% 1% 0;
+    border: 0;
+}
+
+.divCell:hover{
+    filter: none;
+    -webkit-filter:none;
+}
+
+divCell:focus{
+    filter: none;
+    -webkit-filter:none;
+}
+
+.nameCell {
+    font-family: Gill Sans, sans-serif;
+    font-size: 30px;
+    float:left;/*fix for  buggy browsers*/
+    display:table-column;
+    height: 50px;
+    width:260px;
+    vertical-align: bottom;
+    text-align: center;
+    margin: 0;
+    border: 0;
+	padding:0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #393939;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+	vertical-align: bottom;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:focus{
+    color: inherit;
+}
+
+footer a:active{
+    color: inherit;
+}
+
+footer a:visited{
+    color: inherit;
+}
+#table {
+    width: 100%;
+    height: 100%;
+    border-style:solid;
+}
+
+
+#search-box-container {
+    font-size: 10px;
+    width: 450px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted white;
+	margin-bottom: 15px;
+}
+
+#search-title {
+    width: 350px;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    float: left;
+}
+
+#search-submit {
+    background-color: transparent;
+    padding-left: 5px;
+	padding-bottom: 0;
+    border: none;
+    font-size: 14px;
+}
+#search-submit:hover {
+    background-color: transparent;
+    border-radius: 10px;
+	border-color: white;
+}
+
+input {
+    font-size:15px;
+}
+
+.search-tracks{
+    margin-left: 0;
+    list-style: none;
+    line-height: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+	margin-top: 0;
+	padding: 0;
+}
+
+#search-result-container {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+	padding: 0;
+}
+
+#playlist-title {
+    float:left;
+    clear:left;
+    padding: 15px;
+    font-family: Gill Sans;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 4px #444;
+	height: auto;
+	margin-bottom: 0;
+}
+
+.player-height{
+    height: 50px;
+}
+
+#most-recently-played-container {
+    margin-left: 5%;
+    width: 100%;
+}
+
+.sns-button {
+    height: 50px;
+	width: 50px;
+	float:right;
+	margin-right: 200px;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	border: 1px solid white;
+	padding: 2px;
+}
+
+.list {
+	height:auto;
+	margin:0;
+}
+
+ul{
+	padding-left: 15px;
+}
+
+#bigtitle3 {
+	display: block;
+    min-height: 100px;
+    float: none;
+    font-size: 50px;
+    padding-left: 25px;
+    line-height: 150px;
+    text-shadow: 10px 10px 40px #444;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.divCell2 {
+	float:left;/*fix for  buggy browsers*/
+    display:table-column;         
+    width:185px;
+    height: 195px;
+    background-image: url(/img/em.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2%;
+    margin: 0 1% 1% 0;
+    border: 0;
+}
