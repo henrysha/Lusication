@@ -17,13 +17,19 @@ $(document).ready(function () {
         $("#accomplishment").css("display", "block");
     });
     
-    $("#arrow-button").click(function () {
-        var button = $("#arrow-button");
-        if (button.hasClass('rotated')) {
-            button.animate({"transform": "rotate(0)"}, "slow").addClass('rotated');
-        } else {
-            button.animate({"transform": "rotate(180deg)"}, "slow").removeClass('rotated');
-        }
+    var rotation = 0;
+
+    jQuery.fn.rotate = function(degrees) {
+    $(this).css({'-webkit-transform' : 'rotate(' + degrees + 'deg)',
+                 '-moz-transform' : 'rotate(' + degrees + 'deg)',
+                 '-ms-transform' : 'rotate(' + degrees + 'deg)',
+                 'transform' : 'rotate(' + degrees + 'deg)',
+                });
+    };
+
+    $('#arrow-button').click(function() {
+        rotation += 180;
+        $(this).rotate(rotation);
     });
     
 });
