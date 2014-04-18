@@ -14,3 +14,5 @@ You can search for a song in rdio server, and play that song.
 Lusication uses rdio &trade; api for authentication and firebase api for the backend real-time database.
 
 ###PLAYLIST, SEARCH_TRACK ARE HIDDEN! CLICK ON THE ARROW BUTTON ON THE TOP_RIGHT CORNER TO TOGGLE!
+
+###REQUIRES A SERVER TO OPERATE! THE GITHUB.IO PAGE WILL NOT WORK PROPERLY!
