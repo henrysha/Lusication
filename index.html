@@ -1,58 +1,205 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<head>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Lusication by swha0901</title>
-  </head>
-
-  <body>
-
+<title>Lusication</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/slide.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>    
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+    <script src="https://www.rdio.com/api/api.js?client_id=JJ1Hkd-HoYedMSwlpbYfpA"></script>
+</head>
+    
+<body>
+<!------------------------------------------------------------------------Header------------------------------------------------------------------------>
+    
     <header>
-      <div class="container">
+        <img id="logo" src="img/LOGO1_WHITE.png"/>
         <h1>Lusication</h1>
-        <h2>HackIllinois 2014</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/swha0901/Lusication/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/swha0901/Lusication/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/swha0901/Lusication" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
+        
+<!------------------------------------------------------------------------Buttons----------------------------------------------------------------------->   
+        
+        <button id="showRight"><img id="arrow-button" src="img/arrow1.png" /></button>
+        <button id="login">
+            <p>Log In</p>
+        </button>
+        <button id="accomplishment-button">Accomplishment</button>
+        <button id="player-button">Player</button>
+        <button id="about-button">About</button>
     </header>
 
+<!----------------------------------------------------------------------container----------------------------------------------------------------------->  
+
     <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="lusication" class="anchor" href="#lusication"><span class="octicon octicon-link"></span></a>Lusication</h1>
 
-<h1></h1>
+<!----------------------------------------------------------------------playlist------------------------------------------------------------------------>      
+        
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+			<div id="topside" class="containerdivNewLine">
+                <div id="playlist-title">
+                    Playlist
+                </div>
+                
+                <div class ="containerdivNewLine">
+                </div>
+                
+                <div id="search-box-container" class="inside-container">
+                    <input type="search" id="search-title" placeholder="Enter track title, artist, or album name here.">
+                    <button id="search-submit">Search</button>
+                <div id="search-result-container"></div>
+                </div>
+            </div>
+					<ul>
+					
+					</ul>
+		</nav>
 
-<h2>
-<a name="hackillinois-2014" class="anchor" href="#hackillinois-2014"><span class="octicon octicon-link"></span></a>HackIllinois 2014</h2>
-
-<hr><h6>
-<a name="created-by-seong-wook-ha-christopher-danhee-choi" class="anchor" href="#created-by-seong-wook-ha-christopher-danhee-choi"><span class="octicon octicon-link"></span></a>created by <a href="mailto:swh0901@gmail.com">Seong Wook Ha</a>, <a href="mailto:christopher.danhee.choi@gmail.com">Christopher Danhee Choi</a>.</h6>
-
-<h1></h1>
-
-<p>Lusication is a location-based service (LBS) connecting you and people near you.
-Basically, it is a music sharing service, and shares the track people near you are listening.
-You can Like the track, which actually likes the person that played the track.
-You can search for a song in rdio server, and play that song.</p>
-
-<p>Lusication uses rdio ™ api for authentication and firebase api for the backend real-time database.</p>
-
-<h3>
-<a name="playlist-search_track-are-hidden-click-on-the-arrow-button-on-the-top_right-corner-to-toggle" class="anchor" href="#playlist-search_track-are-hidden-click-on-the-arrow-button-on-the-top_right-corner-to-toggle"><span class="octicon octicon-link"></span></a>PLAYLIST, SEARCH_TRACK ARE HIDDEN! CLICK ON THE ARROW BUTTON ON THE TOP_RIGHT CORNER TO TOGGLE!</h3>
-      </section>
+<!-------------------------------------------------------------------------About Tab--------------------------------------------------------------------------->
+        
+        <div id="about">
+            <div id="bigtitle"><b>About</b></div>
+            
+            <div id="lusication">    
+                <div class="description">
+                <b>Lusication</b> is a location-based musing sharing/nextwork service.<br>
+                <b>Lusication</b> locates you, finds people near you, and connect you to them.<br>
+                <b>Lusication</b> provides you the songs your neighbors are listening to.
+                </div>
+            
+            <div class="logo">
+                <div id="lusication-logo" class="shadowed center"></div>
+            </div>
+                
+            </div>
+            <div id="rdio">
+                <div class="logo">
+                    <div id="rdio-logo" class="shadowed center">
+                    </div>
+                </div>
+                
+                <div class="description2"><b>Lusication</b> uses the rdio&trade; api to play the music.<br>
+                rdio&trade; login is necessary to fully utilize Lusication.<br>
+                Still, guest usage allows limited access to the features.</div>
+            </div>
+            <div id="firebase">
+                <div class="description3"><b>Lusication</b> uses the Firebase api to manage backend database.<br>  
+                </div>
+                
+                <div class="logo">
+                    <div id="fire-logo" class="shadowed center">
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+<!----------------------------------------------------------------------------Player Tab----------------------------------------------------------------------->
+        
+        <div id="player">
+			<div id="album-art-container" class="inside-container shadowed center"></div>
+            
+            <div class="inside-container containerdivNewLine player-height"></div>
+            
+            <div id="most-recently-played-container" class="inside-container">
+                Most Recently Played Music:
+            </div>
+            
+            <div id="number-played-container" class="inside-container">
+                Number of Music Played:
+            </div>
+            
+            <div id="liked-number-container" class="inside-container">
+                Number of Likes:
+            </div>
+			
+			<div id="bigtitle3" class="inside-container containerdivNewLine"><b>Favorite Accomplishments</b></div>           
+            <div class="divTable">
+				 <div class="divRow">
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+					<div class="divCell2"></div>
+				</div>
+				<div class="divRow">
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+					<div class="nameCell">Five Likes</div>
+				</div>
+			</div>
+        </div>
+    
+<!-------------------------------------------------------------------------Accomplishment Tab------------------------------------------------------------------>        
+       
+        <div id="accomplishment">
+            <div id="bigtitle2" ><b>Accomplishment</b></div>
+            <div class="divTable">
+             <div class="divRow">
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+            </div>
+            <div class="divRow">
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+            </div>
+            <div class="divRow">
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+                <div class="divCell"></div>
+            </div>
+            <div class="divRow">
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+                <div class="nameCell">Five Likes</div>
+            </div>
+      </div>
+        </div>
     </div>
 
+<!-------------------------------------------------------------------------------Footer------------------------------------------------------------------------>     
     
-  </body>
+    <footer class="text-center">
+        <a href="https://www.facebook.com/pages/Lusication/519479314829438"><img class="sns-button" src="img/fb.png" /></a>
+		Copyright &copy; 2014 <a class="mail" href="mailto:swh0901@gmail.com">Seong Wook Ha</a>, <a class="mail" href="mailto:cdchoi3@illinois.edu"> Christopher Danhee Choi.</a> All Rights Reserved.
+        <br>We recommend using high resolution (1280*720 or higher).
+        
+    </footer>
+    
+<!-------------------------------------------------------------------------------Script------------------------------------------------------------------------> 
+    <script src="js/player.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+		<script>
+			var 
+				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+
+				showRight = document.getElementById( 'showRight' ),
+				body = document.body;
+
+			showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+			}
+		</script>
+</body>
 </html>
