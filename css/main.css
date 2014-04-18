@@ -526,7 +526,7 @@ ul{
     display:table-column;         
     width:185px;
     height: 195px;
-    background-image: url(/img/em.png);
+    background-image: url(../img/em.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2%;
