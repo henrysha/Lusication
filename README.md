@@ -6,6 +6,8 @@
 ######created by [Seong Wook Ha](mailto:swh0901@gmail.com), [Christopher Danhee Choi](mailto:christopher.danhee.choi@gmail.com).
 =================
 
+###CURRENTLY UNAVAILABLE FOR USE DUE TO FIREBASE EXPIRATION!
+
 Lusication is a location-based service (LBS) connecting you and people near you.
 Basically, it is a music sharing service, and shares the track people near you are listening.
 You can Like the track, which actually likes the person that played the track.
