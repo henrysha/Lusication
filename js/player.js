@@ -1,6 +1,6 @@
 //console.log("javascript loaded");
 
-var database = new Firebase('https://sizzling-fire-9662.firebaseio.com/');
+var database = new Firebase('https://blazing-fire-1600.firebaseio.com/');
 var user_key, user_lat, user_lon, user_track;
 
 user_lat = 0;
