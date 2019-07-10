@@ -3,11 +3,11 @@
 
 ##HackIllinois 2014
 ------------------
-######created by [Seong Wook Ha](mailto:swh0901@gmail.com), [Christopher Danhee Choi](mailto:christopher.danhee.choi@gmail.com).
-######Sample page in [this link] (http://henrysha.github.io/Lusication)
+created by [Seong Wook Ha](mailto:swh0901@gmail.com), [Christopher Danhee Choi](mailto:christopher.danhee.choi@gmail.com).
+Sample page in [this link] (http://henrysha.github.io/Lusication)
 =================
 
-###CURRENTLY UNAVAILABLE FOR USE DUE TO FIREBASE EXPIRATION!
+### CURRENTLY UNAVAILABLE FOR USE DUE TO FIREBASE EXPIRATION!
 
 Lusication is a location-based service (LBS) connecting you and people near you.
 Basically, it is a music sharing service, and shares the track people near you are listening.
@@ -16,6 +16,6 @@ You can search for a song in rdio server, and play that song.
 
 Lusication uses rdio &trade; api for authentication and firebase api for the backend real-time database.
 
-###PLAYLIST, SEARCH_TRACK ARE HIDDEN! CLICK ON THE ARROW BUTTON ON THE TOP_RIGHT CORNER TO TOGGLE!
+### PLAYLIST, SEARCH_TRACK ARE HIDDEN! CLICK ON THE ARROW BUTTON ON THE TOP_RIGHT CORNER TO TOGGLE!
 
-###REQUIRES A SERVER TO OPERATE! THE GITHUB.IO PAGE WILL NOT WORK PROPERLY!
+### REQUIRES A SERVER TO OPERATE! THE GITHUB.IO PAGE WILL NOT WORK PROPERLY!
