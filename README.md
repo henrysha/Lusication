@@ -5,7 +5,7 @@
 ------------------
 
 created by [Seong Wook Ha](mailto:swh0901@gmail.com), [Christopher Danhee Choi](mailto:christopher.danhee.choi@gmail.com).
-Sample page in [this link] (http://henrysha.github.io/Lusication)
+Sample page in [this link](http://henrysha.github.io/Lusication)
 
 =================
 
